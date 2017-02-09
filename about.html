@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSE590 Parallel Programming Models</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<a href="index.html" id="logo"><img src="images/sbu.jpg" alt="logo"></a>
+			<ul>
+				<li>
+					<a href="index.html">Pleiades</a>
+				</li>
+				<li>
+					<a href="subdivisions.html">Applications</a>
+				</li>
+				<li class="selected">
+					<a href="about.html">Top500 Detatils</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="body" class="about">
+		<div style="float: right; width: 67%;">
+				<h3>System Architecture</h3>
+				<ul>
+				<li>
+					Manufacturer: SGI
+				</li>
+				<li>
+					161 racks (11,472 nodes)
+				</li>
+				<li>
+					7.25 Pflop/s peak cluster
+				</li>
+				<li>
+					5.95 Pflop/s LINPACK rating (#13 on November 2016 <a href="https://www.top500.org/list/2016/11/">TOP500 list</a>)
+				</li>
+				<li>
+					175 Tflop/s HPCG rating (#9 on November 2016 <a href="http://www.hpcg-benchmark.org/">HPCG list</a>)
+				</li>
+				<li>
+					Total CPU cores: 246,048
+				</li>
+				<li>
+					Total memory: 938 TB
+				</li>
+				<li>
+					2 racks (64 nodes total) enhanced with NVIDIA graphics processing units (GPUs)
+					<ul>
+						<li>
+							184,320 CUDA cores
+						</li>
+						<li>
+							0.275 Pflop/s total
+						</li>
+					</ul>
+				</li>
+				<li>
+					1 rack (32 nodes total) enhanced with Intel Xeon Phi co-processors (MICs)
+					<ul>
+						<li>
+							3,840 MIC cores
+						</li>
+						<li>
+							0.064 Pflop/s total
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div>
+				<h3>Interconnects</h3>
+				<ul>
+					<li>
+						Internode: InfiniBand®, with all nodes connected in a partial hypercube topology
+					</li>
+					<li>
+						Two independent InfiniBand® fabrics
+					</li>
+					<li>
+						InfiniBand® DDR, QDR and FDR
+					</li>
+					<li>
+						Gigabit Ethernet management network
+					</li>
+				</ul>
+				<h3>Storage</h3>
+				<ul>
+					<li>
+						SGI InfiniteStorage NEXIS 9000 home filesystem
+					</li>
+					<li>
+						29 PB of RAID disk storage configured over several cluster-wide Lustre filesystems
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div style="float: right; width: 33%;">
+				<img src="images/node.jpg" alt="">
+		</div>
+
+		<h3>Operating Environment</h3>
+		<ul>
+			<li>
+				Operating system: SUSE Linux
+			</li>
+			<li>
+				Job scheduler: Altair PBS Professional
+			</li>
+			<li>
+				Compilers: Intel and GNU C, C++ and Fortran
+			</li>
+			<li>
+				MPI: SGI MPT
+			</li>
+		</ul>
+		<img src="images/node_details.JPG" alt="">
+	</div>
+	<div id="footer">
+		<div>
+
+		</div>
+	</div>
+</body>
+</html>
